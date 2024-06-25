@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+
+    <title>Weather App</title>
+  </head>
+  <body class="bg-teal-600">
+    <div class="container mx-auto px-4">
+      <!-- <============================================Search-Bar========================================> -->
+      <div
+        class="pt-2 relative mx-auto text-gray-600 flex justify-center gap-4 mt-24 -mb-20"
+      >
+        <input
+          class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+          type="search"
+          name="search"
+          placeholder="Enter City or Zip Code"
+          id="input"
+        />
+        <button
+          class="bg-white rounded-lg px-4 py-1 text-green-800"
+          id="search"
+        >
+          Search
+        </button>
+      </div>
+      <!-- <============================================Weather Card========================================> -->
+      <div class="min-h-screen flex items-center justify-center">
+        <div class="flex flex-col bg-white rounded-2xl p-4 w-full max-w-xs">
+          <div class="font-bold text-xl" id="city">London</div>
+          <div class="text-sm text-gray-500">
+            <span class="clouds-description"></span>
+          </div>
+          <div
+            class="mt-6 text-6xl self-center inline-flex items-center justify-center rounded-lg text-indigo-400 h-24 w-24"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png"
+              alt="cloudy"
+              class="clouds"
+            />
+          </div>
+          <div class="flex flex-row items-center justify-center mt-6">
+            <div class="font-medium text-4xl">
+              <span class="temp">40</span> C°
+            </div>
+            <div class="flex flex-col items-center ml-6">
+              <div><span class="cloudy text-xl"></span></div>
+            </div>
+          </div>
+          <div class="flex flex-row justify-between mt-6">
+            <div class="flex flex-col items-center">
+              <div class="font-medium text-sm">Wind</div>
+              <div class="text-sm text-gray-500">
+                <span class="wind">9</span> k/h
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="font-medium text-sm">Humidity</div>
+              <div class="text-sm text-gray-500">
+                <span class="Humidity">68</span>%
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <div class="font-medium text-sm">Visibility</div>
+              <div class="text-sm text-gray-500">10km</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
